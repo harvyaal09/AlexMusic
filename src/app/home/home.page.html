@@ -1,0 +1,13 @@
+<ion-content class="custom-bg-color">
+  <swiper-container class="sp-bg-color">
+    <swiper-slide *ngFor="let slide of slides; let i = index">
+      <h2 [class.italic-title]="i < 3">{{slide.title}}</h2>
+      <ion-icon name="{{slide.icon}}"></ion-icon>
+      <ion-avatar class="style-avatar">
+        <img alt="Silhouette of a person's head" src="{{slide.avatar}}" />
+      </ion-avatar>
+      <img class="slide-image" src="{{slide.image}}" />
+      <p class="slide-description">{{slide.description}}</p>
+    </swiper-slide>
+  </swiper-container>
+</ion-content>
