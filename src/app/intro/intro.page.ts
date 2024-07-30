@@ -51,7 +51,7 @@ export class IntroPage implements OnInit {
     //console.log("Estoy intentando cerrar la intro")
     this.storage.set("isIntroShowed", true)
     this.router.navigateByUrl("/home")
-  }
+}
 
 
 }
